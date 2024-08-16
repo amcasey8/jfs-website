@@ -138,9 +138,18 @@ footer {
     p {
         font-size: 1rem;
     }
+}
 
+/* Ensure images are responsive */
+img {
+    max-width: 100%; /* Make the image scale down proportionally */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
     img {
-        width: 100%; /* Make images responsive */
-        height: auto;
+        width: 100%; /* Force images to fit within the screen width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
