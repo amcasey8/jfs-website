@@ -3,31 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Website</title>
-    <!-- Link to the CSS file -->
+    <title>Joint Fire Sciences Program</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General font and body styling */
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #333; /* Dark text for contrast */
+            padding: 20px;
+        }
+
+        /* Section titles */
+        h1, h3, h5 {
+            color: #2b2d42; /* Darker shade for headers */
+        }
+
+        /* Image styling */
+        img {
+            border: 2px solid #2b2d42; /* Dark border around images */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the horizontal links section */
+        #additional-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        #additional-info ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        #additional-info ul li a {
+            text-decoration: none;
+            padding: 10px 25px;
+            color: #2b2d42; /* Dark text color */
+            border: 2px solid #2b2d42; /* Dark border */
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #additional-info ul li a:hover {
+            background-color: #f8f9fa; /* No background color, just outline */
+            color: #50526d; /* Lighter text color on hover */
+        }
+    </style>
 </head>
 <body>
-    <!-- Landing Page Section -->
-    <header>
-        <h1>Alex Casey</h1>
-        <nav>
-            <ul>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <p>I'm a human-environmental geographer working on home insurance issues and wildfire risk/hazard mapping and regulation in the Pacific Northwest. Being an interdisciplinary researcher means my day-to-day is a bit of an adventure: You can find me in Oregon or California attending public meetings & interviewing folks, working at my computer with lots of data in a GIS, writing poetry, or frolicking in some forest stand.</p>
-      <img src="realportrait.jpeg" alt="A recent self portrait" style="width: 700px; height: 500px;">
-     
-      <section id="contact">
-        <p>Get in touch:</p>
-        
-        <p><a href="mailto:acasey8@uoregon.edu">acasey8@uoregon.edu</a></p>
-        <p><a href="https://www.linkedin.com/in/alexandra-casey-94720" target="_blank">LinkedIn </a></p>
-        <p><a href="https://twitter.com/pyrogeoalex" target="_blank">@pyrogeoalex</a></p>
+    <section id="jfs-project">
+        <header>
+        <h1>Mapping the Contours of Oregon's Wildfire Futures</h1>
+        <p><em>A Policy Implementation Analysis of the SB 762/80 hazard maps and wildfire regulation in Oregon</em></p>
+
+        <p><strong>Summary:</strong> Since 2021, Oregon has been rolling out and revising its wildfire codes and standards, informed by a new statewide hazard map. As part of my graduate research at the University of Oregon, I am seeking to better understand ways in which the implementation of Oregon's SB 762/80 map (and associated policy) could be more inclusive, effective, and equitable. The results of this Joint Fire Science Program-funded research will culminate in a summary guide for policymakers in Oregon and other states looking to implement similar legislation. In short, I want this research to amplify YOUR perspectives and thoughts. What do you want policymakers to know?</p>
+        <img src="lapinemap.jpeg" alt="Ground truthing the SB 80 draft map in La Pine, Oregon" style="width: 700px; height: 500px;">
     </section>
 
-    </header>
+    <!-- Google Form Embed Section -->
+    <section id="community-input">
+        <h3>Share Your Story</h3>
+        <p>As part of this project, we are seeking input from policymakers, fire personnel, property owners, and renters throughout Oregon to better understand local perspectives on the SB 762/80 hazard map implementation and home insurance. Please use the form below to share your thoughts and experiences.</p>
 
-    
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFO7J7x1IbIaZ1DV6asDi2gSqjqrOYFOZR-xCSzLN5icd4tA/viewform?embedded=true" width="640" height="1417" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <!-- Horizontal Links to Nested Pages -->
+    <section id="additional-info">
+        <ul>
+            <li><a href="sb_updates.html">SB 762/80 Updates</a></li>
+            <li><a href="learnings_reflections.html">Learnings & Reflections</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
+
